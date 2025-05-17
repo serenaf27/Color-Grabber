@@ -3,7 +3,7 @@
     "name": "Color Grabber",
     "version": "1.0.0",
     "description": "Get the color of a pixel from any website. Click on the extension icon to get started.",
-    "permissions": ["sidePanel", "storage", "activeTab"],
+    "permissions": ["sidePanel", "storage"],
     "background": {
         "service_worker": "service-worker.js"
     },

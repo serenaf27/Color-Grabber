@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Side Panel</title>
+        <style>
+            body {
+                width:250px;
+                padding:20px;
+                font-family: Arial, sans-serif;
+                background-color: #fff;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
+
+            h3 {
+                margin: 0;
+                font-size: 20px;
+                text-align: center;
+                color: #333;
+            }
+            #toggle {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #fff;
+                padding:10px;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            label {
+                font-size: 16px;
+                color: #333;
+            }
+            #colorDisplay {
+                font-size: 24px;
+                color: #333;
+            }
+            input[type="checkbox"] {
+                width: 20px;
+                height: 20px;
+                accent-color: #4f8cff;
+            }
+            .hotkey-info {
+                font-size: 14px;
+                color: #666;
+                text-align: center;
+                margin-top: 10px;
+            }
+            .hotkey-info span {
+                font-weight: bold;
+            }
+            </style>
+    </head>
+    <body>
+        <h3>Color Grabber</h3>
+        <div id="toggle">
+            <label for="toggleSwitch">Color Grabber</label>
+            <input type="checkbox" id="toggleSwitch">
+        </div>
+        <div id="colorDisplay">
+            <p>Color: <span id="colorValue">#FFFFFF</span></p>
+        <script src="sidepanel.js"></script>
+    </body>
+</html>

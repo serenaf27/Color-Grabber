@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Color Grabber",
+    "version": "1.0.0",
+    "description": "Get the color of a pixel from any website. Click on the extension icon to get started.",
+    "permissions": ["sidePanel", "storage", "activeTab"],
+    "background": {
+        "service_worker": "service-worker.js"
+    },
+    "action": {       
+        "default_icon": {
+        "16": "images/color_wheel.png",
+        "48": "images/color_wheel.png",
+        "128": "images/color_wheel.png"
+        }
+    },
+    "side_panel": {
+        "default_path": "sidepanel.html",
+        "default_title": "Color Grabber"
+    }
+}
